@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Snag - Customer Tracker",
+  "description": "Find the people who want your product",
+  "version": "1.0",
+
+  "permissions": [
+    "notifications",
+    "alarms",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "snaglogo.png",
+    "popup": "index.html"
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  }
+}
