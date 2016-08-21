@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+* {
+  font-family: Roboto;
+}
+
+button {
+  min-width: 100px;
+  background-color: #13829B;
+  border-radius: 2px;
+  color: rgba(256,256,256,0.9);
+
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.btn:hover {
+  color: white;
+  font-weight: bold;
+}
