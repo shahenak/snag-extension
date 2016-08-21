@@ -27118,6 +27118,7 @@
 	var message = __webpack_require__(241).message;
 	var date = __webpack_require__(241).date;
 	var container = __webpack_require__(241).container;
+	var link = __webpack_require__(241).link;
 
 	function puke(object) {
 	  return React.createElement(
@@ -27161,7 +27162,12 @@
 	          React.createElement(
 	            'div',
 	            { style: date },
-	            tag.date
+	            tag.date.slice(0, 10)
+	          ),
+	          React.createElement(
+	            'a',
+	            { style: link, href: tag.url },
+	            'Reply'
 	          )
 	        );
 	      })
@@ -27200,7 +27206,7 @@
 	  container: {
 	    'backgroundColor': 'white',
 	    'margin': '24px auto',
-	    'padding': '16px 0',
+	    'padding': '16px',
 	    'width': '60%',
 	    'border': '0.3px solid lightgray'
 	  },
@@ -27217,7 +27223,12 @@
 	  },
 	  date: {
 	    'font-size': '14px',
-	    'color': 'rgba(0,0,0,0.5)'
+	    'color': 'rgba(0,0,0,0.5)',
+	    'margin-bottom': '8px'
+	  },
+	  link: {
+	    'color': '#13829B',
+	    'fontSize': '16px'
 	  }
 	};
 
